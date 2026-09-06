@@ -1,0 +1,18 @@
+.mat-mdc-table {
+    width: 100%;
+    background-color: #f1f8e9; // Light green background for the whole table
+}
+
+.mat-mdc-header-row {
+    background-color: #dcedc8; // Slightly darker green for header
+}
+
+.mat-mdc-row:hover {
+    background-color: #c5e1a5; // Hover effect
+}
+
+// Adjusting button colors if mainly 'primary' is used
+.mat-mdc-raised-button.mat-primary {
+    background-color: #33691e; // Darker green for buttons
+    color: white;
+}

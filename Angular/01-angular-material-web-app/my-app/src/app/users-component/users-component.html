@@ -1,0 +1,26 @@
+<h3>Users</h3>
+
+@if (isLoading) {
+<div class="spinner">Loading...</div>
+} @else {
+<table>
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Details | Edit | Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (user of users; track user.id) {
+        <tr>
+            <td>Name: {{ user.name }}</td>
+            <td>
+                <button [routerLink]="'/user/' + user.id">Details</button>
+                <button [routerLink]="'/user-edit/' + user.id">Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+}

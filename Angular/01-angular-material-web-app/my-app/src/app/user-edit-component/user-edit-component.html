@@ -1,0 +1,29 @@
+@if (user) {
+<form #userForm="ngForm" (ngSubmit)="submit(userForm)" class="edit-form">
+    <div class="form-group">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="telephone">Phone: </label>
+        <input type="text" id="telephone" name="telephone" [(ngModel)]="user.telephone">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" [(ngModel)]="user.email" email>
+    </div>
+
+    <button type="submit">Submit (Stub)</button>
+</form>
+
+<div class="user-card">
+    <h3>User (Live Preview): {{ user.name }}</h3>
+    <p>Phone: {{ user.telephone }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Address: {{ user.address.street }}, {{ user.address.postalCode }} {{ user.address.city }}</p>
+</div>
+} @else {
+<p>User not found.</p>
+}

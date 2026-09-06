@@ -1,0 +1,70 @@
+@use 'shared' as s;
+$color1: #FF5733;
+$color2: #33FF57;
+$color3: #3357FF;
+$color4: #F3FF33;
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: inline-block;
+  @include s.box-base;
+}
+
+.box1 { background-color: $color1; }
+.box2 { background-color: $color2; }
+.box3 { background-color: $color3; }
+.box4 { background-color: $color4; }
+
+
+
+.site-header {
+  height: 100px;
+  width: 100%;
+  background: #2b6ea3; 
+  border-bottom: 1px solid #e6e6e6;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  display: flex;
+  align-items: center;
+}
+
+.logo-dot {
+  width: 60px;
+  height: 60px;
+  background: pink;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.layout {
+  display: flex;
+  min-height: calc(100vh - 100px); 
+}
+
+.sidebar {
+  width: 300px;
+  background: #29c063; 
+  border-right: 1px solid #e1e4e8;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 20px;
+  background: #f7f0a5; 
+  box-sizing: border-box;
+}
+
+html, body 
+{ 
+  height: 100%;
+  margin: 0; 
+} 
+.layout { 
+  display: flex; 
+  min-height: calc(100vh - 100px);
+ }

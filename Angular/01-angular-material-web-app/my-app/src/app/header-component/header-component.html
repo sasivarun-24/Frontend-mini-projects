@@ -1,0 +1,18 @@
+<header style="display: flex; align-items: center; gap: 1rem; background: #ddd; padding: 10px;">
+    <!-- Logo - assumed to be in public folder -->
+    <img src="logo.svg" alt="HS Fulda" style="height: 50px;">
+
+    <button routerLink="/dashboard" routerLinkActive="active" mat-button>Dashboard</button>
+    <button routerLink="/counter" routerLinkActive="active" mat-raised-button color="primary">Counter</button>
+    <button routerLink="/users" routerLinkActive="active" mat-button>Users</button>
+    <button routerLink="/material-users" routerLinkActive="active" mat-flat-button>MaterialUsers</button>
+
+    <span style="flex: 1;"></span>
+
+    @if (appState.isLoggedIn()) {
+    <span>Logged in as: {{ appState.currentUser() }}</span>
+    <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+    } @else {
+    <button routerLink="/login" routerLinkActive="active" mat-raised-button color="primary">Login</button>
+    }
+</header>

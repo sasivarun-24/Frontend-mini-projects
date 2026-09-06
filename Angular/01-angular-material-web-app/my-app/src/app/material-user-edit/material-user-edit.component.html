@@ -1,0 +1,31 @@
+<div class="edit-container" style="padding: 20px;">
+    <h2>Edit User (Material)</h2>
+
+    <form #userForm="ngForm" (ngSubmit)="submit(userForm)">
+
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Firstname / Name</mat-label>
+                <input matInput placeholder="Name" name="name" [(ngModel)]="user.name" required>
+                <mat-error>Name is required</mat-error>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Phone</mat-label>
+                <input matInput placeholder="1234567" name="telephone" [(ngModel)]="user.telephone">
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="email@example.com" name="email" [(ngModel)]="user.email" email required>
+                <mat-error>Valid email is required</mat-error>
+            </mat-form-field>
+        </p>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="!userForm.valid">Save</button>
+    </form>
+</div>

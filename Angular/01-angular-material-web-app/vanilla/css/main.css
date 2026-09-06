@@ -1,0 +1,18 @@
+h1 {
+  color: #926b7b;
+}
+
+button {
+  color: #0ec736;
+  background-color: #926b7b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+button:hover {
+  color: #926b7b;
+  background-color: white;
+  border: 1px solid #926b7b;
+}
+
+/*# sourceMappingURL=main.css.map */

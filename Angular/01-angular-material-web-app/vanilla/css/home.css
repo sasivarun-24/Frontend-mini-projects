@@ -1,0 +1,41 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  display: inline-block;
+  border-radius: 8px;
+  border-radius: 50%;
+  background-color: #ffb347;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  display: inline-block;
+  border-radius: 8px;
+  border-radius: 50%;
+  background-color: #4a90e2;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  display: inline-block;
+  border-radius: 8px;
+  border-radius: 50%;
+  background-color: #50e3c2;
+}
+
+.box4 {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  display: inline-block;
+  border-radius: 8px;
+  border-radius: 50%;
+  background-color: #d5a6bd;
+}
+
+

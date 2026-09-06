@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Squidward Tentacles",
+    "address": {
+      "street": "Pacific Street",
+      "city": "Berlin",
+      "postalCode": "15675",
+      "country": "Germany"
+    },
+    "email": "squidward@gmail.com",
+    "telephone": "+49 12446 67890"
+  },
+  {
+    "id": 2,
+    "name": "Patrick Star",
+    "address": {
+      "street": "Desert World",
+      "city": "Atlantic",
+      "postalCode": "36034",
+      "country": "Germany"
+    },
+    "email": "patrick@gmail.com",
+    "telephone": "+49 234 5678901"
+  },
+  {
+    "id": 3,
+    "name": "Spongebob Squarepants",
+    "address": {
+      "street": "Underwater World",
+      "city": "Bikini Bottom",
+      "postalCode": "34721",
+      "country": "Germany"
+    },
+    "email": "bob@yahoo.com",
+    "telephone": "+49 345 456732"
+  }
+]

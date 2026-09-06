@@ -1,0 +1,18 @@
+
+@use 'shared' as s;
+$color1: #8E44AD;
+$color2: #2980B9;
+$color3: #27AE60;
+$color4: #E74C3C;
+
+.box {
+  @include s.box-base;
+  
+}
+
+.box1 { background-color: $color1; }
+.box2 { background-color: $color2; }
+.box3 { background-color: $color3; }
+.box4 { background-color: $color4; }
+
+

@@ -1,0 +1,14 @@
+.counter-container {
+    padding: 20px;
+
+    .counter-display {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .counter-controls {
+        display: flex;
+        gap: 10px;
+    }
+}

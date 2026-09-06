@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "squidward",
+    "address": {
+      "street": "pacific 12",
+      "city": "Berlin",
+      "postalCode": "15675",
+      "country": "Germany"
+    },
+    "email": "squidward@gmail.com",
+    "telephone": "+49 12446 67890"
+  },
+  {
+    "id": 2,
+    "name": "patrick",
+    "address": {
+      "street": "desert world",
+      "city": "atlantic",
+      "postalCode": "36034",
+      "country": "Germany"
+    },
+    "email": "patrick@gmail.com",
+    "telephone": "+49 234 5678901"
+  },
+  {
+    "id": 3,
+    "name": "spongebob",
+    "address": {
+      "street": "underwater world",
+      "city": "catacombs",
+      "postalCode": "34721",
+      "country": "Germany"
+    },
+    "email": "bob@yahoo.com",
+    "telephone": "+49 345 456732"
+  }
+
+]

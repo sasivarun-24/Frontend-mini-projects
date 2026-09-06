@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            section.first{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                 
+            }
+            .blue-box{
+                width: 300px;
+                height: 150px;
+                background-color: blue;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+            }
+             section.two-box {
+                margin-top: 30px;
+                font-size: 0;
+            }
+            .left-box,.right-box {
+                    display: inline-block;
+                    height: 100px;
+                    width: 50%;
+            }
+            .left-box{
+                background-color: blue;
+            }
+            .right-box{
+                background-color: red;
+            }
+            .flex-section{
+                display: flex;
+                margin-top: 50px;
+            }
+            .green-box{
+                flex: 1;
+                 height: 100px;
+                background-color: green;
+                border: 2px solid white;
+            }
+            .responsive-section {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 20px;
+                padding: 10px;
+                transition: all 0.3s ease;
+                gap:10px;
+            }
+
+            .responsive-box {
+                background-color: lightblue;
+                height: 100px;
+                border-radius: 10px;
+            }
+            @media (min-width: 700px) {
+                .responsive-section {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+            @media (min-width: 1100px) {
+                .responsive-section{
+                        grid-template-columns:repeat(4,1fr);
+                    }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="first">
+            <div class="blue-box">Hello World</div>
+        </section>
+        <section class="two-box">
+            <div class="left-box"></div>
+            <div class="right-box"></div>
+        </section>
+        <section class="flex-section">
+            <div class="green-box"></div>
+            <div class="green-box"></div>
+        </section>
+        <section class="responsive-section">
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+            <div class="responsive-box"></div>
+        </section>
+
+    </body>
+</html>
