@@ -1,0 +1,77 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+}
+
+#roll {
+    padding: 15px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3c72;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#roll:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+#roll:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.style {
+    font-size: 96px;
+    font-weight: 800;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    min-width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Container for the dice to sit side-by-side if you alter HTML layout, 
+   but currently they are strictly separated by <br>. We can override <br> behavior */
+br {
+    display: none;
+}
+
+body>#roll {
+    /* Resets margin for flexbox layout since <br> are hidden */
+    margin-bottom: 40px;
+}
+
+/* Create a wrapper implicitly via nth-of-type semantics to align labels horizontally */
+body {
+    flex-direction: column;
+}
+
+div.dice-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
